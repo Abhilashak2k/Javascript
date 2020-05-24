@@ -7,7 +7,7 @@
 function SearchArray (searchNum, ar) {
   var position = Search(ar, searchNum)
   if (position !== -1) {
-    console.log('The element was found at ' + (position + 1) + "th position")
+    console.log('The element was found at position ' + (position + 1))
   } else {
     console.log('The element not found')
   }
@@ -15,8 +15,8 @@ function SearchArray (searchNum, ar) {
 
 // Search “theArray” for the specified “key” value
 function Search (theArray, key) {
-  //store theArray.length in a variable so that .length function is not summoned in every iteration 
-  var len = theArray.length;
+  //  store theArray.length in a variable so that .length function is not summoned in every iteration
+  var len = theArray.length
   for (var n = 0; n < len; n++) {
     if (theArray[n] === key) { return n }
   }
